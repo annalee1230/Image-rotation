@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D 粒子手势控制系统</title>
+</head>
+
+<body>
+    <div id="ui-container">
+        <!-- <input type="file" id="folder-input" webkitdirectory directory multiple accept="image/*" /> -->
+        <div class="instruction">
+            <p>✊ 左手握拳：退出图片模式，粒子聚成粉色爱心</p>
+            <p>🖐️ 左手张开：进入/保持展示照片墙</p>
+            <p>☝️ 右手食指指向屏幕/握拳：选择照片 (停留1秒查看)</p>
+            <p>👈 右手向左摆动：切换上一张照片</p>
+            <p>👉 右手向右摆动：切换下一张照片</p>
+        </div>
+    </div>
+    <div id="camera-container">you
+        <video id="webcam" autoplay playsinline muted></video>
+        <canvas id="gesture-canvas"></canvas>
+    </div>
+    <button id="fullscreen-btn" class="control-btn">全屏</button>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
